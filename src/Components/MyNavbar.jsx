@@ -1,14 +1,21 @@
 import { Navbar, Nav, Button } from 'react-bootstrap'
 import { Form, FormControl } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const CustomNavbar = (props) => {
     return(
         <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Leave your Umbrella at Home</Navbar.Brand>
+    <Navbar.Brand href="/">Weather Forecast</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Locations</Nav.Link>
-      <Nav.Link href="#pricing">Info</Nav.Link>
+      <Link to="/">
+        <div className="nav-link" style={{ color: 'whitesmoke' }}>Home</div>
+       </Link>
+       <Link to="/locations">
+        <div className="nav-link" style={{ color: 'whitesmoke' }}>Locations</div>
+       </Link>
+      <Link to="/details">
+        <div className="nav-link" style={{ color: 'whitesmoke' }}>Details</div>
+       </Link>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
