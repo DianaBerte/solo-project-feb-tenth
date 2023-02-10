@@ -24,7 +24,7 @@ const SIngleLocation = () => {
         </Card.Text>
         <Button variant="primary" onClick={() => navigate('/details')} >Details</Button>
         <br />
-        <Button variant="primary">About</Button>
+        <Button variant="primary" onClick={() => navigate('/about')} >About</Button>
       </Card.Body>
     </Card>
     <Card >
@@ -37,7 +37,7 @@ const SIngleLocation = () => {
         </Card.Text>
          <Button variant="primary" onClick={() => navigate('/details')} >Details</Button>
         <br />
-        <Button variant="primary">About</Button>
+        <Button variant="primary" onClick={() => navigate('/about')} >About</Button>
       </Card.Body>
     </Card>
     <Card >
@@ -50,7 +50,7 @@ const SIngleLocation = () => {
         </Card.Text>
         <Button variant="primary" onClick={() => navigate('/details')} >Details</Button>
         <br />
-        <Button variant="primary">About</Button>
+        <Button variant="primary" onClick={() => navigate('/about')} >About</Button>
       </Card.Body>
     </Card>
         </>
