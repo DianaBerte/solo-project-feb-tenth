@@ -1,21 +1,25 @@
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { Row, Col} from "react-bootstrap";
 
 
 
-const SIngleLocation = () => {
+const Home = () => {
 
   const navigate = useNavigate()
 
     return(
-        <>
+      <>
         <h3>Welcome!</h3>
         <br/>
         <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas nisl felis, a cursus velit pulvinar sed. Ut eu ex lectus. Integer luctus sodales ultricies. Donec interdum, eros et porttitor sagittis, dolor nulla condimentum nisi, a gravida tortor neque quis dolor. Fusce cursus hendrerit vehicula. Curabitur scelerisque feugiat eros in commodo. Donec suscipit, ante ac blandit accumsan, neque nunc pellentesque risus, non scelerisque turpis tellus at eros. Nam urna est, finibus a justo et, aliquam egestas purus. Fusce rutrum nisl vel enim pretium sagittis. Fusce massa neque, fermentum a sagittis eget, semper eu nisi. Nam ullamcorper elementum placerat. Aliquam iaculis metus porta, vestibulum nunc nec, euismod neque. Pellentesque eget tortor est. Curabitur sodales risus ligula. Morbi a ante eget ipsum sagittis posuere.
           </h6>
           <br />
+          <Container>
+          <Row>
+          <Col>
     <Card >
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="https://fastly.picsum.photos/id/32/300/200.jpg?hmac=jA7ND38rGra6oapvq5VzLy1X3bMjZhM2LmK7lUytsMI" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -27,8 +31,10 @@ const SIngleLocation = () => {
         <Button variant="primary" onClick={() => navigate('/about')} >About</Button>
       </Card.Body>
     </Card>
+    </Col>
+    <Col >
     <Card >
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="https://fastly.picsum.photos/id/826/300/200.jpg?hmac=NnmrhH_NCICiI15hFluZ11rXEWXDnXtpEyhA1TlwEfY" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -40,8 +46,10 @@ const SIngleLocation = () => {
         <Button variant="primary" onClick={() => navigate('/about')} >About</Button>
       </Card.Body>
     </Card>
+    </Col>
+    <Col>
     <Card >
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="https://fastly.picsum.photos/id/118/300/200.jpg?hmac=4PdfMFtROS4lTO5bgSauhA_y7SjZGF0NhVRCGAq3NSs" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -53,8 +61,11 @@ const SIngleLocation = () => {
         <Button variant="primary" onClick={() => navigate('/about')} >About</Button>
       </Card.Body>
     </Card>
-        </>
-    )
-}
+        </Col>
+        </Row>
+        </Container>
+       </>
+  )
+  }
 
-export default SIngleLocation
+export default Home
