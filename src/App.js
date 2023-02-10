@@ -18,7 +18,7 @@ function App() {
             <Route element={<Home />} path="/" />
             <Route element={<Details />} path="/details" />
             <Route element={<Locations />} path="/locations" />
-            <Route element={<h1>Not Found 😢 </h1>} path="*" />v
+            <Route element={<h1>Not Found 😢</h1>} path="*" />v
           </Routes>
         </body>
       </div>
