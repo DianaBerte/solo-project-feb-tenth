@@ -1,12 +1,35 @@
 import { Card, Button, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { Row, Col} from "react-bootstrap";
+import { useEffect, useState } from "react";
 
 
 
 const Home = () => {
 
   const navigate = useNavigate()
+
+  // const [weather, setWeather] = useState([]);
+  const [city, setCity] = useState("");
+
+  const fetchWeather = async () => {
+    try {
+      let response = await fetch('api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=5ba9d17923ff2d1e458d43d79ee8b7dc');
+      if (response.ok) {
+        const data = await response.json();
+        setCity(data);
+        console.log("City object:", city);
+      } else {
+        alert("error");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchWeather();
+  })
 
     return(
       <>

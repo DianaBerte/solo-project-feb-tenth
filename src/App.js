@@ -12,17 +12,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <MyNavbar />
-        <br />
-        <body className="App-body">
-          <br />
-          <Routes>
-            <Route element={<Home />} path="/" />
-            <Route element={<Details />} path="/details" />
-            <Route element={<Locations />} path="/locations" />
-            <Route element={<About />} path="/about" />
-            <Route element={<h1>Not Found 😢</h1>} path="*" />v
-          </Routes>
-        </body>
+        <Routes>
+          <Route element={<Home />} path="/" />
+          <Route element={<Details />} path="/details" />
+          <Route element={<Locations />} path="/locations" />
+          <Route element={<About />} path="/about" />
+          <Route element={<h1>Not Found 😢</h1>} path="*" />v
+        </Routes>
       </div>
     </BrowserRouter>
   );
