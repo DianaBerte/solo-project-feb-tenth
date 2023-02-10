@@ -1,6 +1,12 @@
 import { Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
+
 
 const SIngleLocation = () => {
+
+  const navigate = useNavigate()
+
     return(
         <>
         <h3>Welcome!</h3>
@@ -16,7 +22,7 @@ const SIngleLocation = () => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Details</Button>
+        <Button variant="primary" onClick={() => navigate('/details')} >Details</Button>
         <br />
         <Button variant="primary">About</Button>
       </Card.Body>
@@ -29,7 +35,7 @@ const SIngleLocation = () => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Details</Button>
+         <Button variant="primary" onClick={() => navigate('/details')} >Details</Button>
         <br />
         <Button variant="primary">About</Button>
       </Card.Body>
@@ -42,7 +48,7 @@ const SIngleLocation = () => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Details</Button>
+        <Button variant="primary" onClick={() => navigate('/details')} >Details</Button>
         <br />
         <Button variant="primary">About</Button>
       </Card.Body>
