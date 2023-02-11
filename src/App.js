@@ -6,6 +6,7 @@ import Details from "./Components/Details";
 import Home from "./Components/Home";
 import Locations from "./Components/Locations";
 import About from "./Components/About";
+import MainSearch from "./Components/Search";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <MyNavbar />
         <Routes>
+          <Route element={<MainSearch />} path="/" />
           <Route element={<Home />} path="/" />
           <Route element={<Details />} path="/details" />
           <Route element={<Locations />} path="/locations" />
