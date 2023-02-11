@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyNavbar from "./Components/MyNavbar";
-import searchCityWeather from "./Components/Home";
+import WeatherSearch from "./Components/Home";
 // import Details from "./Components/Details";
 // import Home from "./Components/Home";
 // import Locations from "./Components/Locations";
@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <MyNavbar />
         <Routes>
-          <Route path="/" element={<searchCityWeather />} />
+          <Route path="/" element={<WeatherSearch />} />
           {/* <Route path="/weather" element={<DisplayArea />} /> */}
           {/* <Route element={<MainSearch />} path="/" />
           <Route element={<Home />} path="/" />
