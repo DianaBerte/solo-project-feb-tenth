@@ -2,11 +2,12 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyNavbar from "./Components/MyNavbar";
-import Details from "./Components/Details";
-import Home from "./Components/Home";
-import Locations from "./Components/Locations";
-import About from "./Components/About";
-import MainSearch from "./Components/Search";
+import searchCityWeather from "./Components/Home";
+// import Details from "./Components/Details";
+// import Home from "./Components/Home";
+// import Locations from "./Components/Locations";
+// import About from "./Components/About";
+// import MainSearch from "./Components/Search";
 
 function App() {
   return (
@@ -14,11 +15,13 @@ function App() {
       <div className="App">
         <MyNavbar />
         <Routes>
-          <Route element={<MainSearch />} path="/" />
+          <Route path="/" element={<searchCityWeather />} />
+          {/* <Route path="/weather" element={<DisplayArea />} /> */}
+          {/* <Route element={<MainSearch />} path="/" />
           <Route element={<Home />} path="/" />
           <Route element={<Details />} path="/details" />
           <Route element={<Locations />} path="/locations" />
-          <Route element={<About />} path="/about" />
+          <Route element={<About />} path="/about" /> */}
           <Route element={<h1>Not Found 😢</h1>} path="*" />v
         </Routes>
       </div>
