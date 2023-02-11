@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyNavbar from "./Components/MyNavbar";
 import WeatherSearch from "./Components/Home";
+import DisplayArea from "./Components/Details";
 // import Details from "./Components/Details";
 // import Home from "./Components/Home";
 // import Locations from "./Components/Locations";
@@ -16,7 +17,7 @@ function App() {
         <MyNavbar />
         <Routes>
           <Route path="/" element={<WeatherSearch />} />
-          {/* <Route path="/weather" element={<DisplayArea />} /> */}
+          <Route path="/weather" element={<DisplayArea />} />
           {/* <Route element={<MainSearch />} path="/" />
           <Route element={<Home />} path="/" />
           <Route element={<Details />} path="/details" />
