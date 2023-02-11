@@ -64,7 +64,7 @@ const WeatherSearch = () => {
               />
             </Form>
           </div>
-          {isloading ? <></> : <Details info={weatherData} />}
+          {isloading ? <></> : <Details anyWord={weatherData} />}
         </Container>
       </Jumbotron>
     </>

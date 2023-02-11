@@ -20,37 +20,37 @@ const DisplayArea = (props) => {
             <div className="weather-container d-flex ">
               <div className="p-4 weather-info text-left">
                 <h4>
-                  {props.info.name} , {props.info.sys.country}
+                  {props.anyWord.name}, {props.anyWord.sys.country} 
                 </h4>
                 <p className="main-temp">
-                   {props.info.main.temp}°C
+                   {props.anyWord.main.temp}°C
                 </p>
                 <p>
                   <b>
-                    Feels like {props.info.main.feels_like}°C with {""}
-                    {props.info.weather[0].description}.
+                    Feels like {props.anyWord.main.feels_like}°C with {""}
+                    {props.anyWord.weather[0].description}.
                   </b>
                 </p>
                 <span className="mr-5">
                  
-                  {props.info.main.temp_min}°C
+                  {props.anyWord.main.temp_min}°C
                 </span>
                 <span>
                   {" "}
                   {""}
                   
-                  {props.info.main.temp_max}°C
+                  {props.anyWord.main.temp_max}°C
                 </span>
                 <br />
                 <span className="mr-5">
                 
-                  {props.info.main.temp_min}°C
+                  {props.anyWord.main.temp_min}°C
                 </span>
                 <span>
                   {" "}
                   {""}
                
-                  {props.info.wind.speed}m/s
+                  {props.anyWord.wind.speed}m/s
                 </span>
               </div>
             </div>
